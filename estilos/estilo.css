@@ -23,7 +23,7 @@
 }
 
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
@@ -63,12 +63,12 @@ body{
 }
 
 .header .logo img{
-    height: 4rem;
+    height: 6rem;
 }
 
 .header .navbar a{
     margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #fff;
 
 }
@@ -83,7 +83,7 @@ body{
 .header .icons div{
     color: #fff;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
 
     
@@ -128,4 +128,52 @@ body{
 
 .header .search-form label:hover{
     color:var(--main-color)
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top: 100%; right: 0;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0.1rem;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    cursor: var(--main-color);
+
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+
+}
+
+.header .cart-items-container .cart-item h3{
+    font-size: 7rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+
+}
+
+.header .cart-items-container .cart-item .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    
 }
