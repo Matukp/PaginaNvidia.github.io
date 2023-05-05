@@ -72,13 +72,13 @@ section{
     padding: .7rem 3rem;
     font-size: 1.7rem;
     color: #fff;
-    background: var(--main-color);
+    background: #171720;
     cursor: pointer;
-    transition: background-color 1s ease;
 }
 
 .btn:hover{
-    background-color: green;
+    background: rgb(6, 94, 6);
+    
 }
 
 .header{
@@ -109,6 +109,7 @@ section{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+    
 
 }
 
@@ -164,6 +165,7 @@ section{
 
 .header .search-form label:hover{
     color: green;
+    
 }
 
 .header .cart-items-container{
@@ -364,4 +366,51 @@ section{
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+
+.menu .box-container .box{
+    background: #ffffff;
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img{
+    height: 25rem;
+
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #010103 !important;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price span{
+    
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    
+}
+
+.menu .box-container .box:hover{
+    background: #fff;
+}
+
+.menu .box-container .box:hover > *{
+    color: white;
 }
